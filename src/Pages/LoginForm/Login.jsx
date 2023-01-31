@@ -15,9 +15,9 @@ const LoginForm = () => {
   };
 
   const handleSubmit = () => {
-    function loginuser(data) {
+    async function loginuser(data) {
       console.log(data);
-      fetch(`https://reset-password-back-end.vercel.app/login`, {
+      await fetch(`https://reset-password-back-end.vercel.app/login`, {
         method: "POST",
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" },

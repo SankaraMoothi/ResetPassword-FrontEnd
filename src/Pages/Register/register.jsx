@@ -18,9 +18,9 @@ const Register = () => {
 
   const handleSubmit = (data) => {
     if (password === conformPass) {
-      function registeruser(data) {
+      async function registeruser(data) {
         console.log(data);
-        fetch(`https://reset-password-back-end.vercel.app/signup`, {
+        await fetch(`https://reset-password-back-end.vercel.app/signup`, {
           method: "POST",
           body: JSON.stringify(data),
           headers: { "Content-Type": "application/json" },
