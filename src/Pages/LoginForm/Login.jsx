@@ -17,7 +17,7 @@ const LoginForm = () => {
   const handleSubmit = () => {
     function loginuser(data) {
       console.log(data);
-      fetch(`http://localhost:5000/login`, {
+      fetch(`https://reset-password-back-end.vercel.app/login`, {
         method: "POST",
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" },

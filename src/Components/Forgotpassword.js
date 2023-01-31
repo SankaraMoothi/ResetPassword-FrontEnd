@@ -19,7 +19,7 @@ function Forgotpassword() {
 
   function Forgotpassword(values) {
     console.log(values);
-    fetch(`http://localhost:5000/forgotpassword`, {
+    fetch(`https://reset-password-back-end.vercel.app/forgotpassword`, {
       method: "POST",
       body: JSON.stringify(values),
       headers: { "Content-Type": "application/json" },

@@ -44,7 +44,7 @@ function Resetpassword() {
 
   function reset(values) {
     console.log(values);
-    fetch(`http://localhost:5000/resetpassword`, {
+    fetch(`https://reset-password-back-end.vercel.app/resetpassword`, {
       method: "POST",
       body: JSON.stringify(values),
       headers: { "Content-Type": "application/json" },

@@ -20,7 +20,7 @@ const Register = () => {
     if (password === conformPass) {
       function registeruser(data) {
         console.log(data);
-        fetch(`http://localhost:5000/signup`, {
+        fetch(`https://reset-password-back-end.vercel.app/signup`, {
           method: "POST",
           body: JSON.stringify(data),
           headers: { "Content-Type": "application/json" },
